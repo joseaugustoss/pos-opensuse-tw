@@ -46,3 +46,6 @@ Script com alguns programas básico para Dev.
  Solução 1: não instalar github-desktop-2.5.0.linux2-1.x86_64
  Solução 2: quebrar github-desktop-2.5.0.linux2-1.x86_64 ao ignorar algumas das dependências
  Escolha 1 para ignorar e começar a instalar, essa escolha é a mesma para possíveis erro de lib em algumas instalações.
+
+ # Obervação
+ Agora só esperar para digitar a senha quando solicitado.

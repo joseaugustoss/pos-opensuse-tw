@@ -31,12 +31,6 @@ sudo zypper dup --from packman --allow-vendor-change
 sudo zypper dup --from packman-essentials --allow-vendor-change
 
 
-# Se houver falha na verificação da assinatura, basta 'i' para ignorar e continuar a instalação
-# Problema: nada fornece libX11-xcb que é necessário a github-desktop-2.5.0.linux2-1.x86_64
-# Solução 1: não instalar github-desktop-2.5.0.linux2-1.x86_64
-# Solução 2: quebrar github-desktop-2.5.0.linux2-1.x86_64 ao ignorar algumas das dependências
-# Escolha 1 para ignorar e começar a instalar
-
 sudo zypper in $DOWNLOADS_APP/*.rpm
 
 
@@ -76,7 +70,7 @@ sudo systemctl restart apache2
 # Configurando o Mysql
 sudo systemctl start mysql
 sudo systemctl enable mysql
-#sudo mysql_secure_installation
+sudo mysql_secure_installation
 
 # Iniciando o Docker
 sudo systemctl enable docker
@@ -102,10 +96,13 @@ sudo systemctl start snapd.apparmor
 
 
 # aplicativos extra
-sudo flatpak install flathub com.spotify.Client
-sudo flatpak install flathub com.obsproject.Studio
-flatpak install flathub org.telegram.desktop
+sudo snap install obs-studio
+sudo snap install spotify
+sudo snap install telegram-desktop
 sudo snap install slack --classic
 sudo snap install beekeeper-studio
 sudo snap install postman
 sudo snap install phpstorm --classic
+sudo snap install android-studio --classic
+
+sudo zypper dup -y
