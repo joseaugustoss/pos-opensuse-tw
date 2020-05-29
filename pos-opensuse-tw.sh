@@ -58,6 +58,7 @@ sudo zypper in -y bzip2 cabextract lhasa lzip p7zip rar unrar unzip zip
 sudo systemctl start apache2
 sudo systemctl enable apache2
 
+sudo chmod 777 -R /srv/www/htdocs
 echo "<html><body><h1>Welcome to my web site!</h1><h2>Servidor OpenSuse</h2></body></html>" > /srv/www/htdocs/index.html
 echo "<?php phpinfo();" > /srv/www/htdocs/info.php
 # Pacote PHP

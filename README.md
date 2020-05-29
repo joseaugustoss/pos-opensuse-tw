@@ -49,3 +49,4 @@ Script com alguns programas básico para Dev.
 
  # Obervação
  Agora só esperar para digitar a senha quando solicitado.
+ E na configuração do mysql escolher a senha de acesso.
